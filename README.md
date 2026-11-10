@@ -12,14 +12,32 @@ Every scene is built by a Python script, every number on screen is computed from
 
 ## Finished videos
 
-| | |
-|---|---|
-| <img src="media/gif/bh_radius.gif" width="240"> | ### Black hole radius<br>**Idea:** squeeze any mass below r<sub>s</sub> = 2GM/c² and it becomes a black hole. For the Sun that is 2.95 km.<br><br>The Sun shrinks while a live counter runs from 695,700 km to 3 km. Light goes out, then the photon sphere (1.5 r<sub>s</sub>) and the shadow (2.6 r<sub>s</sub>) appear with dimension rings. Background stars are lensed by the hole.<br><br>**Exact:** r<sub>s</sub> from CODATA constants, photon sphere 3M, shadow b<sub>crit</sub> = 3√3 M, weak-field lensing.<br>**Labelled on screen:** the shrink is drawn on a log scale ("picture not to scale").<br><br>[Watch (540p)](media/video/bh_radius_540x960.mp4) |
-| <img src="media/gif/magnetar.gif" width="240"> | ### Magnetar<br>**Idea:** a magnetar's field is 10¹¹ T at the surface and falls as 1/r³. It would still wipe a credit card from 180,000 km, halfway to the Moon.<br><br>A probe on the magnetic equator carries two counters, distance and field in scientific notation. The camera pulls out at true scale while ever larger dipole shells appear. Milestones: MRI scanner strength at 38,620 km, card erasure at 179,256 km.<br><br>**Exact:** dipole law B = B₀(R/r)³, field lines r = L sin²θ, every counter value, the zoom itself.<br>**Assumptions on screen:** R = 12 km, B₀ = 10¹¹ T.<br><br>[Watch (540p)](media/video/magnetar_540x960.mp4) |
-| <img src="media/gif/butterfly.gif" width="240"> | ### The butterfly effect<br>**Idea:** the same three equations, starts that differ by 0.0003, and a few seconds later the paths sit on opposite wings. That is why weather forecasts fail after about two weeks.<br><br>Eight heads start on the Lorenz attractor. The equations are on screen and a Δ counter shows the gap growing more than 150,000-fold, computed from the simulation frame by frame.<br><br>**Exact:** Lorenz system (σ = 10, ρ = 28, β = 8/3) integrated with RK4, separation per frame.<br><br>[Watch (540p)](media/video/butterfly_540x960.mp4) |
-| <img src="media/gif/fourier_heart.gif" width="240"> | ### Fourier heart<br>**Idea:** any closed shape is a sum of circles spinning at whole-number speeds. More circles, less error. The same math sits inside JPEG and MP3.<br><br>Chains of 1, 3, 8 and 30 epicycles draw a heart. Counters show the number of circles and the maximum error: 56.3 %, 35.8 %, 12.1 %, 3.6 %.<br><br>**Exact:** discrete Fourier transform of the outline, ring radii and rotation rates, error values.<br>**Design note:** the heart has corners on purpose. The classic smooth heart curve has only four harmonics, so "more circles" would stop improving it after eight.<br><br>[Watch (540p)](media/video/fourier_heart_540x960.mp4) |
-| <img src="media/gif/black_hole.gif" width="240"> | ### Falling into a black hole<br>A cinematic fall into a Schwarzschild black hole: the curved-space throat (Flamm paraboloid), an accretion disk with Keplerian rotation, and gold photon paths bending around the hole.<br><br>**Exact:** horizon 2M, photon sphere 3M, shadow 3√3 M, ISCO 6M, null geodesics integrated with RK4.<br>**Approximation, labelled:** lensed disk arcs are ribbons; star lensing is first-order.<br><br>[Watch (540p)](media/video/black_hole_540x960.mp4) |
-| <img src="media/gif/lorenz_storm.gif" width="240"> | ### Lorenz storm<br>Eight identical-looking starts trace the same path, then tear apart across the attractor. The first study of the chaos series, later developed into the explained butterfly video.<br><br>**Exact:** Lorenz ODE with RK4.<br><br>[Watch (540p)](media/video/lorenz_storm_540x960.mp4) |
+<table>
+<tr>
+<td valign="top" width="260"><img src="media/gif/bh_radius.gif" width="250"></td>
+<td valign="top"><h3>Black hole radius</h3><b>Idea:</b> squeeze any mass below r<sub>s</sub> = 2GM/c² and it becomes a black hole. For the Sun that is 2.95 km.<br><br>The Sun shrinks while a live counter runs from 695,700 km to 3 km. Light goes out, then the photon sphere (1.5 r<sub>s</sub>) and the shadow (2.6 r<sub>s</sub>) appear with dimension rings. Background stars are lensed by the hole.<br><br><b>Exact:</b> r<sub>s</sub> from CODATA constants, photon sphere 3M, shadow b<sub>crit</sub> = 3√3 M, weak-field lensing.<br><b>Labelled on screen:</b> the shrink is drawn on a log scale ("picture not to scale").<br><br><a href="media/video/bh_radius_540x960.mp4">Watch (540p)</a></td>
+</tr>
+<tr>
+<td valign="top" width="260"><img src="media/gif/magnetar.gif" width="250"></td>
+<td valign="top"><h3>Magnetar</h3><b>Idea:</b> a magnetar's field is 10¹¹ T at the surface and falls as 1/r³. It would still wipe a credit card from 180,000 km, halfway to the Moon.<br><br>A probe on the magnetic equator carries two counters, distance and field in scientific notation. The camera pulls out at true scale while ever larger dipole shells appear. Milestones: MRI scanner strength at 38,620 km, card erasure at 179,256 km.<br><br><b>Exact:</b> dipole law B = B₀(R/r)³, field lines r = L sin²θ, every counter value, the zoom itself.<br><b>Assumptions on screen:</b> R = 12 km, B₀ = 10¹¹ T.<br><br><a href="media/video/magnetar_540x960.mp4">Watch (540p)</a></td>
+</tr>
+<tr>
+<td valign="top" width="260"><img src="media/gif/butterfly.gif" width="250"></td>
+<td valign="top"><h3>The butterfly effect</h3><b>Idea:</b> the same three equations, starts that differ by 0.0003, and a few seconds later the paths sit on opposite wings. That is why weather forecasts fail after about two weeks.<br><br>Eight heads start on the Lorenz attractor. The equations are on screen and a Δ counter shows the gap growing more than 150,000-fold, computed from the simulation frame by frame.<br><br><b>Exact:</b> Lorenz system (σ = 10, ρ = 28, β = 8/3) integrated with RK4, separation per frame.<br><br><a href="media/video/butterfly_540x960.mp4">Watch (540p)</a></td>
+</tr>
+<tr>
+<td valign="top" width="260"><img src="media/gif/fourier_heart.gif" width="250"></td>
+<td valign="top"><h3>Fourier heart</h3><b>Idea:</b> any closed shape is a sum of circles spinning at whole-number speeds. More circles, less error. The same math sits inside JPEG and MP3.<br><br>Chains of 1, 3, 8 and 30 epicycles draw a heart. Counters show the number of circles and the maximum error: 56.3 %, 35.8 %, 12.1 %, 3.6 %.<br><br><b>Exact:</b> discrete Fourier transform of the outline, ring radii and rotation rates, error values.<br><b>Design note:</b> the heart has corners on purpose. The classic smooth heart curve has only four harmonics, so "more circles" would stop improving it after eight.<br><br><a href="media/video/fourier_heart_540x960.mp4">Watch (540p)</a></td>
+</tr>
+<tr>
+<td valign="top" width="260"><img src="media/gif/black_hole.gif" width="250"></td>
+<td valign="top"><h3>Falling into a black hole</h3>A cinematic fall into a Schwarzschild black hole: the curved-space throat (Flamm paraboloid), an accretion disk with Keplerian rotation, and gold photon paths bending around the hole.<br><br><b>Exact:</b> horizon 2M, photon sphere 3M, shadow 3√3 M, ISCO 6M, null geodesics integrated with RK4.<br><b>Approximation, labelled:</b> lensed disk arcs are ribbons; star lensing is first-order.<br><br><a href="media/video/black_hole_540x960.mp4">Watch (540p)</a></td>
+</tr>
+<tr>
+<td valign="top" width="260"><img src="media/gif/lorenz_storm.gif" width="250"></td>
+<td valign="top"><h3>Lorenz storm</h3>Eight identical-looking starts trace the same path, then tear apart across the attractor. The first study of the chaos series, later developed into the explained butterfly video.<br><br><b>Exact:</b> Lorenz ODE with RK4.<br><br><a href="media/video/lorenz_storm_540x960.mp4">Watch (540p)</a></td>
+</tr>
+</table>
 
 ---
 
